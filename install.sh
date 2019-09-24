@@ -89,7 +89,7 @@ fi
 ## Downloading SonarQube 
 #VER=$(curl -s https://sonarsource.bintray.com/Distribution/sonarqube/  | tail -n 10 | awk -F '[<,>]' '{print $5}' | grep zip$ |tail -1)
 #URL="https://sonarsource.bintray.com/Distribution/sonarqube/$VER"
-URL=https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.7.zip
+URL=https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.9.1.zip
 TFILE="/opt/$(echo $URL |awk -F / '{print $NF}')"
 TDIR=$(echo $TFILE|sed -e 's/.zip//')
 rm -rf /opt/sonarqube
